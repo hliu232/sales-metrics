@@ -9,6 +9,16 @@ def calculate_daily_sales(sales):
     """
     return sum(sales)
 
+def apply_discount(sales, discount=0.1):
+    """
+    Applies a discount to each sale item.
+    :param sales: list of numerical sales values
+    :param discount: discount rate (e.g., 0.1 = 10%)
+    :return: list of discounted sales
+    """
+    return [round(sale * (1 - discount), 2) for sale in sales]
+
+
 
 def filter_sales(sales, threshold=100):
     """
@@ -21,9 +31,8 @@ def filter_sales(sales, threshold=100):
 
 
 if __name__ == "__main__":
-    #sample_sales = [100, 200, 150]
-    #print("Total Sales:", calculate_daily_sales(sample_sales))
     sample_sales = [50, 100, 200, 75, 150]
     filtered = filter_sales(sample_sales, threshold=100)
     print("Filtered Sales:", filtered)
     print("Total Filtered Sales:", calculate_daily_sales(filtered))
+    print("Total Sales:", calculate_daily_sales(sample_sales))
