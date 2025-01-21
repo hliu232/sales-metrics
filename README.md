@@ -1,2 +1,2 @@
 # sales-metrics
-a new repository for CSP451 CheckPoint 2
+This Lab is for that calculates daily sales metrics and performs basic data transformations.
