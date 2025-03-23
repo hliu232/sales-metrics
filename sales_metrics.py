@@ -24,4 +24,3 @@ if __name__ == "__main__":
     print("Discounted Sales:", discounted_sales)
     print("Total Discounted Sales:", calculate_daily_sales(discounted_sales))
 
-# merge
