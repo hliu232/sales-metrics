@@ -19,10 +19,6 @@ def apply_discount(sales, discount=0.1):
     return [round(sale * (1 - discount), 2) for sale in sales]
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-    
-=======
->>>>>>> 4582e325013ff0b088076fd2aacafb944d0f2829
     sample_sales = [100, 200, 300]
     discounted_sales = apply_discount(sample_sales, discount=0.2)
     print("Discounted Sales:", discounted_sales)
