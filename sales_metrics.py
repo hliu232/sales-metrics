@@ -23,3 +23,5 @@ if __name__ == "__main__":
     discounted_sales = apply_discount(sample_sales, discount=0.2)
     print("Discounted Sales:", discounted_sales)
     print("Total Discounted Sales:", calculate_daily_sales(discounted_sales))
+
+# merge
