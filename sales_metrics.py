@@ -29,10 +29,5 @@ def apply_discount(sales, discount=0.1):
 
 if __name__ == "__main__":
     
-    sample_sales = [50, 100, 200, 75, 150,300]
-    filtered = filter_sales(sample_sales, threshold=100)
-    print("Filtered Sales:", filtered)
-    print("Total Filtered Sales:", calculate_daily_sales(filtered))
-    discounted_sales = apply_discount(sample_sales, discount=0.2)
-    print("Discounted Sales:", discounted_sales)
-    print("Total Discounted Sales:", calculate_daily_sales(discounted_sales))
+    sample_sales = [100, 200, 150]
+    print("Total Sales:", calculate_daily_sales(sample_sales))
